@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.LoginContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00005d;
+    flex-direction: column;
+    color: white;
+
+    .formDiv {
+        width: 300px;
+        height: auto;
+        background-color: #4525d1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+        h1 {
+            color: white;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 80%;
+            height: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        button {
+            height: 30px;
+            width: 65px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .link {
+            margin-top: 10px;
+            display: flex;
+            gap: 5px;
+            color: white;
+
+            a {
+                color: #00005d;
+            }
+        }
+    }
+}
