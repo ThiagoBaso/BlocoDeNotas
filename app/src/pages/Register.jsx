@@ -28,9 +28,21 @@ export function Register() {
             <form>
             <div className="formDiv">
                 <h1>Cadastrar</h1>
-                <input type="text" placeholder='Nome de Usuario'/>
-                <input type="text" placeholder='Email' onChange={(e) => setEmail(e.target.value)}/>
-                <input type="password" placeholder='Senha' onChange={(e) => setPassword(e.target.value)}/>
+                
+                <div className='wrapInput'>
+                <input className={email !== "" ? "inputActivated" : "inputForm"} type="text" />
+                <span className='focusInput' data-placeholder='Nome de Usuario'></span>
+                 </div>
+                 <div className='wrapInput'>
+                <input className={email !== "" ? "inputActivated" : "inputForm"} type="text" onChange={(e) => setEmail(e.target.value)}/>
+                <span className='focusInput' data-placeholder='Email'></span>
+                </div>
+
+                <div className='wrapInput'>
+                <input className={password !== "" ? "inputActivated" : "inputForm"} type="password" onChange={(e) => setPassword(e.target.value)}/>
+                <span className='focusInput' data-placeholder='Senha'></span>
+                </div>
+
                 <button onClick={HandleSingOut}>Criar</button>
                 <div className='link'>
                     <p>Ja tem uma conta?</p>

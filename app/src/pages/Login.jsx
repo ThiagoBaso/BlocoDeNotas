@@ -28,9 +28,19 @@ export function Login() {
       <form>
         <div className="formDiv">
           <h1>Login</h1>
-          <input type="text" placeholder='Email' onChange={(e) => setEmail(e.target.value)}/>
-          <input type="password" placeholder='Senha' onChange={(e) => setPassword(e.target.value)}/>
+          
+          <div className='wrapInput'>
+            <input className={email !== "" ? "inputActivated" : "inputForm"} type="text" onChange={(e) => setEmail(e.target.value)}/>
+            <span className='focusInput' data-placeholder='Email'></span>
+          </div>
+
+          <div className='wrapInput'>
+            <input className={password !== "" ? "inputActivated" : "inputForm"} type="password" onChange={(e) => setPassword(e.target.value)}/>
+            <span className='focusInput' data-placeholder='Senha'></span>
+          </div>
+
           <button onClick={HandleSingIn}>Entrar</button>
+
           <div className='link'>
             <p>Não tem uma conta?</p>
             <Link to="/register">Crie aqui!</Link>

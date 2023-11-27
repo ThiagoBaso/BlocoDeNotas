@@ -1,0 +1,22 @@
+
+.navContainer {
+    background-color: #333;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    top: 0px;
+
+    button {
+        height: 40px;
+        width: 80px;
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(to left, #21d4fd, #b721ff);
+    }
+}
